@@ -18,7 +18,7 @@ def ConnectToServer():
 
     print("Connected to:", server_ip)
 
-    HTTPMessage = "GET /pagina_html_prova.html HTTP/1.1\r\n Connection: close\r\n\r\n"
+    HTTPMessage = "GET /test_files/pagina_html_prova.html HTTP/1.1\r\n Connection: close\r\n\r\n"
 
     bytes = str.encode(HTTPMessage)
 
