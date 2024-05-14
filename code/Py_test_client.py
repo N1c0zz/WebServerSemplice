@@ -7,7 +7,6 @@ import socket
 import threading
 import requests
 
- 
 def ConnectToServer():
 
     server_ip = 'localhost'
@@ -17,7 +16,7 @@ def ConnectToServer():
 
     socketObject.connect((server_ip, server_port))
 
-    print("Connected to: ", server_ip)
+    print("Connected to:", server_ip)
 
     HTTPMessage = "GET /pagina_html_prova.html HTTP/1.1\r\n Connection: close\r\n\r\n"
 
