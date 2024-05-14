@@ -7,9 +7,9 @@ import http.server
 import socketserver
 
 def check_parameters ():
-    if len(sys.argv) != 3:
+    if (len(sys.argv) < 2) or (len(sys.argv) > 3):
         print (len(sys.argv))
-        print("Il comando non è corretto. Usa il seguente formato: Py_webserver.py indirizzo_ip_del_server_web porta_del_server")
+        print("Il comando non è corretto. Usa il seguente formato: Py_webserver.py indirizzo_ip_del_server_web porta_del_server(opzionale)")
         sys.exit(0)
 
 def main():
